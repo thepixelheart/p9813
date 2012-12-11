@@ -775,6 +775,6 @@ void TCprintError(TCstatusCode status)
 	  "         may choose to continue with default setting."
 	};
 
-	if((status >= 0) && (status < (sizeof(msg) / sizeof(msg[0]))))
+	if(status < (sizeof(msg) / sizeof(msg[0])))
 		(void)puts(msg[status]);
 }
