@@ -86,10 +86,10 @@ static unsigned char
 	strandBitMask[8] = {
 	  TC_FTDI_TX,                 /* Strand 0 data */
 	  TC_FTDI_RX,                 /* Strand 1 data */
-	  TC_FTDI_DTR | TC_FTDI_RTS,  /* Strand 2 data */
-	  0,                          /*      ...      */
-	  0,
-	  0,
+	  TC_FTDI_DTR,  /* Strand 2 data */
+	  TC_FTDI_RTS,                          /*      ...      */
+	  TC_FTDI_DCD,
+	  TC_FTDI_DSR,
 	  0,
 	  TC_FTDI_CTS,                /* Serial clock  */
 	};
